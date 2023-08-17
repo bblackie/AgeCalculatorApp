@@ -5,6 +5,8 @@ Source: https://www.askpython.com/python-modules/tkinter/age-calculator --> Mini
 Date: 22/01/2022
  '''
 from datetime import date
+import tkinter as tk
+
 today = date.today()
  
 def exit():
@@ -18,8 +20,7 @@ def get_age():
     t1.delete('1.0', tk.END)
     t1.insert(tk.END,age)
     t1.config(state='disabled')
- 
-import tkinter as tk
+
 window = tk.Tk()
 window.geometry("400x300")
 window.config(bg="#F7DC6F")
