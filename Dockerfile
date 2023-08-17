@@ -14,11 +14,8 @@ WORKDIR /usr/app/src
 COPY main.py ./
 # Now the structure looks like this '/usr/app/src/test.py'
 
+# Dockerfile must expose only one tcp port or define port in settings
 EXPOSE 80/tcp
-EXPOSE 80/udp
-EXPOSE 443/tcp
-EXPOSE 8081/udp
-
 
 #CMD instruction should be used to run the software
 #contained by your image, along with any arguments.
